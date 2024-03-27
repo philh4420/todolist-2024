@@ -1,0 +1,156 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.controls input[type="text"],
+.controls select {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  flex: 1;
+  min-width: 200px;
+}
+
+.controls select {
+  margin-right: 10px;
+}
+
+.controls button {
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.controls button:hover {
+  background-color: #0056b3;
+}
+
+.edit-btn {
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.edit-btn:hover {
+  background-color: #0056b3;
+}
+
+.delete-btn {
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+
+.controls button.edit-btn:hover,
+.controls button.delete-btn:hover {
+  background-color: #ffca28;
+  color: #212529;
+}
+
+
+#taskList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #f8f9fa;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-item:hover {
+  background-color: #e9ecef;
+}
+
+.task-item .task-name {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.task-item .priority {
+  padding: 5px 10px;
+  background-color: #28a745;
+  color: #fff;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.task-item .due-date {
+  color: #6c757d;
+  margin-right: 10px;
+}
+
+.category {
+  color: #6c757d;
+  margin-right: 10px;
+}
+
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+@media (max-width: 500px) {
+
+  .controls input[type="text"],
+  .controls select {
+    width: 100%;
+  }
+
+  .controls button {
+    width: 100%;
+  }
+}
